@@ -187,7 +187,59 @@ button,input{font:inherit}
           </article>
         </div>
       </section>
+<!-- Demo Video -->
+<div class="hero-video reveal">
+  <div class="video-wrapper">
+    <iframe
+      src="https://supercut.ai/embed/agentspanel/wegLliUxzeY8IcbBVrgh7L?embed=full"
+      title="OpenTags Product Demo"
+      loading="lazy"
+      frameborder="0"
+      allow="clipboard-write; encrypted-media; picture-in-picture"
+      allowfullscreen
+      mozallowfullscreen
+      webkitallowfullscreen>
+    </iframe>
+  </div>
+</div>
 
+<style>
+.hero-video{
+    width:min(980px,100%);
+    margin:48px auto;
+    border-radius:20px;
+    overflow:hidden;
+    background:#fff;
+    border:1px solid rgba(0,0,0,.08);
+    box-shadow:0 20px 60px rgba(0,0,0,.12);
+}
+
+.video-wrapper{
+    position:relative;
+    width:100%;
+    padding-bottom:62.5%; /* 16:10 */
+}
+
+.video-wrapper iframe{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    border:0;
+    border-radius:20px;
+}
+
+@media (max-width:768px){
+    .hero-video{
+        margin:32px auto;
+        border-radius:16px;
+    }
+
+    .video-wrapper iframe{
+        border-radius:16px;
+    }
+}
+</style>
       <section class="integrations" id="docs">
         <h2 class="reveal">Works with the tools you already use</h2>
         <div class="tool-row reveal">
